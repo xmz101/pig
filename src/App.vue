@@ -5,6 +5,7 @@
 </template>
 
 <script>
+    import storage from './storage'
     export default {
         name: 'App',
         components: {
@@ -16,7 +17,13 @@
             }
         },
         mounted() {
-
+            // storage.setItem('a', 1);
+            //storage.setItem('abc', {
+            //  a: 1
+            //}, 'user');
+            storage.setItem('user', {
+                a: 1
+            });
         }
 
     }
